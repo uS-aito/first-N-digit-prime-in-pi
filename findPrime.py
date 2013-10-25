@@ -4,7 +4,6 @@ import sys
 
 #試し割り関数
 def isPrime(num):
-	TmpList = []
 	tmp = 3
 	
 	if num < 2:
@@ -13,16 +12,15 @@ def isPrime(num):
 		return 0
 
 	while 1:
-		TmpList.append(tmp)
+		if num % tmp == 0:
+			return 0
 		tmp = tmp + 2
 		if tmp > int(math.sqrt(num)):
-			break
+			return 1
 
 	for var in TmpList:
 		if num % var == 0:
 			return 0
-
-	return 1
 
 #変数群
 Pi = 1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
