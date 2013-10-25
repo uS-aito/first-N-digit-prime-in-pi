@@ -34,7 +34,7 @@ obj = 0
 #コマンドライン引数解析
 argvs = sys.argv
 argc = len(argvs)
-n
+
 if not argc == 2:
 	print "Argument is incorrect."
 	exit()
