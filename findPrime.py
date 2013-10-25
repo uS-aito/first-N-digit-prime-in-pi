@@ -84,6 +84,6 @@ while 1:
 		break
 	else:
 		position = position + 1
-		if position + 10 > len(strPi):
+		if position + digits > len(strPi):
 			print "Not Found"
 			break
